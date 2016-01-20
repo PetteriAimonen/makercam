@@ -1,35 +1,14 @@
-function fondo(unit)
-{
-  var factor;
-  if(unit=="mm")
-  {
-    factor = 30;
-  }
-  else
-  {
-    factor = 76.2;
-  }
-  var canvasSize = view.size;
-  var Xsize = canvasSize.width;
-  var Ysize = canvasSize.height;
-
-  for(i=factor;i<=Xsize;i+=factor)
-  {
-    var linea = new Path.Line(new Point(i,0),new Point(i,Ysize));
-    linea.strokeColor = 'gray';
-    linea.dashArray = [0.5,5];
-  }
-  for(i=factor;i<=Ysize;i+=factor)
-  {
-    var linea = new Path.Line(new Point(0,i),new Point(Xsize,i));
-    linea.strokeColor = 'gray';
-    linea.dashArray = [0.5,5];
-  }
-}
-
 function onResize(event)
 {
   view.draw();
 }
 
-fondo("in");
+var path = new Path();
+	// Give the stroke a color
+	path.strokeColor = 'black';
+	var start = new Point(100, 100);
+	// Move to start and draw a line from there
+	path.moveTo(start);
+	// Note the plus operator on Point objects.
+	// PaperScript does that for us, and much more!
+	path.lineTo(start + [ 100, -50 ]);
