@@ -12,3 +12,5 @@ var path = new Path();
 	// Note the plus operator on Point objects.
 	// PaperScript does that for us, and much more!
 	path.lineTo(start + [ 100, -50 ]);
+
+fondo("mm");

@@ -27,4 +27,4 @@ function fondo(unit)
   }
 }
 
-fondo("in");
+window.fondo = fondo;
