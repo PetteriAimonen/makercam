@@ -13,16 +13,20 @@ function fondo(unit)
   var Xsize = canvasSize.width;
   var Ysize = canvasSize.height;
 
-  for(i=factor;i<=Xsize;i+=factor)
+  //for(i=factor;i<=Xsize;i+=factor)
+  for(i=-50*factor;i<=Xsize;i+=factor)
   {
-    var linea = new Path.Line(new Point(i,0),new Point(i,Ysize));
+    //var linea = new Path.Line(new Point(i,0),new Point(i,Ysize));
+    var linea = new Path.Line(new Point(i,-25*factor),new Point(i,Ysize));
     linea.strokeColor = 'gray';
     linea.dashArray = [0.5,5];
     linea.strokeScaling = false;
   }
-  for(i=factor;i<=Ysize;i+=factor)
+  //for(i=factor;i<=Ysize;i+=factor)
+  for(i=-25*factor;i<=Ysize;i+=factor)
   {
-    var linea = new Path.Line(new Point(0,i),new Point(Xsize,i));
+    //var linea = new Path.Line(new Point(0,i),new Point(Xsize,i));
+    var linea = new Path.Line(new Point(-50*factor,i),new Point(Xsize,i));
     linea.strokeColor = 'gray';
     linea.dashArray = [0.5,5];
     linea.strokeScaling = false;
