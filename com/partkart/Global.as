@@ -17,11 +17,11 @@
 
 		public static var dragging:Boolean = false; // captures all dragging events, including dots, paths and main window dragging
 
-		public static var unit:String = "in"; // "in" = inches "cm" = centimeters. Stop using magic values!!
+		public static var unit:String = "cm"; // "in" = inches "cm" = centimeters. Stop using magic values!!
 
 		public static var space:Boolean = false; // true if space is currently down
 
-		public static var importres:Number = 72;
+		public static var importres:Number = 90;
 		public static var localsnap:Boolean = true;
 		
 		public static var tolerance:Number = 0.001; // global tolerance for cam operations
