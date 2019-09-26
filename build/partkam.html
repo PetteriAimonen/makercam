@@ -1,49 +1,45 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<!doctype html>
 	<head>
-		<title>partkam</title>
-		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-		<style type="text/css" media="screen">
-		html, body { height:100%; background-color: #ffffff;}
-		body { margin:0; padding:0; overflow:hidden; }
-		#flashContent { width:100%; height:100%; }
-		</style>
+		<link rel="stylesheet" href="makerstyle.css" />
+		<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.7.0/themes/ui-lightness/jquery-ui.css" />
+
+	    <script src="jquery.min.js" type="text/javascript"></script>
+	    <script src="jquery-ui.min.js" type="text/javascript"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+if($("body").height() < $(window).height()){
+    $("body").height($(window).height());
+}
+});
+</script>
 	</head>
 	<body>
-		<div id="flashContent">
-			<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="100%%" height="100%%" id="partkam" align="left">
-				<param name="movie" value="partkam.swf" />
-				<param name="quality" value="best" />
-				<param name="bgcolor" value="#ffffff" />
-				<param name="play" value="true" />
-				<param name="loop" value="true" />
-				<param name="wmode" value="window" />
-				<param name="scale" value="showall" />
-				<param name="menu" value="true" />
-				<param name="devicefont" value="false" />
-				<param name="salign" value="lt" />
-				<param name="allowScriptAccess" value="sameDomain" />
-				<!--[if !IE]>-->
-				<object type="application/x-shockwave-flash" data="partkam.swf" width="100%%" height="100%%">
-					<param name="movie" value="partkam.swf" />
-					<param name="quality" value="best" />
-					<param name="bgcolor" value="#ffffff" />
-					<param name="play" value="true" />
-					<param name="loop" value="true" />
-					<param name="wmode" value="window" />
-					<param name="scale" value="showall" />
-					<param name="menu" value="true" />
-					<param name="devicefont" value="false" />
-					<param name="salign" value="lt" />
-					<param name="allowScriptAccess" value="sameDomain" />
-				<!--<![endif]-->
-					<a href="http://www.adobe.com/go/getflash">
-						<img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" />
-					</a>
-				<!--[if !IE]>-->
-				</object>
-				<!--<![endif]-->
-			</object>
-		</div>
+		<div id="container">
+
+			<div id="content">
+					<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" 
+					codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0" 
+					width="100%" 
+					 id="makerCAM"> 
+						<param name="movie" value="makercam.swf" /> 
+						<param name="quality" value="high" /> 
+						<param name="bgcolor" value="#ffffff" /> 
+							<embed src="partkam.swf" quality="high" bgcolor="#ffffff"
+								width="100%" height="100%" 
+								name="makerCAM" align="" type="application/x-shockwave-flash" 
+								pluginspage="http://www.macromedia.com/go/getflashplayer"> 
+							</embed> 
+					</object>
+					<div id="thedialog" title="MakerCAM Help">
+					        <span class="ui-icon ui-icon-circle-check" style="float:left; margin:0 7px 50px 0;"></span>
+					        <p>about this...</p>
+					</div>
+			</div><!--END CONTENT-->
+
+			<div id="footer">
+
+			</div><!--END FOOTER-->
+		
+		</div><!--END CONTAINER-->
 	</body>
 </html>
